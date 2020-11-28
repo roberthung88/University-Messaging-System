@@ -1,0 +1,14 @@
+image: node:10.15.3
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to Firebase
+        deployment: production
+        script:
+          - cd web
+          - pipe: atlassian/firebase-deploy:0.5.0
+            variables:
+              FIREBASE_TOKEN: $FIREBASE_TOKEN
+              PROJECT_ID: 'university-messaging-system'
+              EXTRA_ARGS: '--except functions'

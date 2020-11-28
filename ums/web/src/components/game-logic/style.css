@@ -1,0 +1,67 @@
+* {
+    background-color: #fff;
+    font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;
+    padding: 5px;
+  }
+  
+  body {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .player {
+    width: 240px;
+    height: 180px;
+    margin: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .selectionButton {
+    width: 100px;
+    height: 50px;
+    display: inline;
+    margin: auto 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    background: #990000;
+  }
+  
+  .player:nth-child(2) {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
+  .winner {
+    width: 100px;
+    height: 55px;
+    margin: 10px auto;
+    color: #990000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .player-image {
+    height: 200px;
+    width: auto;
+  }
+  button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+    color: #000;
+    font-size: 18px;
+    border-radius: 25px;
+    background: #FFCC00;
+    outline: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
